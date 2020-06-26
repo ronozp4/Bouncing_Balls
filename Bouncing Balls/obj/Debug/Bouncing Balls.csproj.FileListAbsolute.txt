@@ -1,0 +1,15 @@
+C:\Users\Ron\source\repos\Bouncing Balls\Bouncing Balls\obj\Debug\Bouncing Balls.csprojAssemblyReference.cache
+C:\Users\Ron\source\repos\Bouncing Balls\Bouncing Balls\obj\Debug\MainWindow.g.cs
+C:\Users\Ron\source\repos\Bouncing Balls\Bouncing Balls\obj\Debug\App.g.cs
+C:\Users\Ron\source\repos\Bouncing Balls\Bouncing Balls\obj\Debug\Bouncing Balls_MarkupCompile.cache
+C:\Users\Ron\source\repos\Bouncing Balls\Bouncing Balls\obj\Debug\Bouncing Balls_MarkupCompile.lref
+C:\Users\Ron\source\repos\Bouncing Balls\Bouncing Balls\bin\Debug\Bouncing Balls.exe.config
+C:\Users\Ron\source\repos\Bouncing Balls\Bouncing Balls\bin\Debug\Bouncing Balls.exe
+C:\Users\Ron\source\repos\Bouncing Balls\Bouncing Balls\bin\Debug\Bouncing Balls.pdb
+C:\Users\Ron\source\repos\Bouncing Balls\Bouncing Balls\obj\Debug\MainWindow.baml
+C:\Users\Ron\source\repos\Bouncing Balls\Bouncing Balls\obj\Debug\Bouncing Balls.g.resources
+C:\Users\Ron\source\repos\Bouncing Balls\Bouncing Balls\obj\Debug\Bouncing_Balls.Properties.Resources.resources
+C:\Users\Ron\source\repos\Bouncing Balls\Bouncing Balls\obj\Debug\Bouncing Balls.csproj.GenerateResource.cache
+C:\Users\Ron\source\repos\Bouncing Balls\Bouncing Balls\obj\Debug\Bouncing Balls.csproj.CoreCompileInputs.cache
+C:\Users\Ron\source\repos\Bouncing Balls\Bouncing Balls\obj\Debug\Bouncing Balls.exe
+C:\Users\Ron\source\repos\Bouncing Balls\Bouncing Balls\obj\Debug\Bouncing Balls.pdb
