@@ -21,11 +21,11 @@ namespace Bouncing_Balls
     /// </summary>
     public partial class MainWindow : Window
     {
-        List<Ball> myBallz; //list for all the balls
+        List<Ball> myBalls; //list for all the balls
         public MainWindow()
         {
             InitializeComponent();
-            myBallz = new List<Ball>();
+            myBalls = new List<Ball>();
         }
 
         int ballsCounter = 0;
@@ -60,7 +60,7 @@ namespace Bouncing_Balls
 
             };
             tbNumBalls.Text = (++ballsCounter).ToString();
-            myBallz.Add(newBall);
+            myBalls.Add(newBall);
             ThreadPool.QueueUserWorkItem(DisplayBall, newBall);
         }
 
@@ -88,21 +88,21 @@ namespace Bouncing_Balls
                 double distance = 0; //the distance
                 double overlap = 0; //the overlap
 
-                for (int i = 0; i < ballsCounter; i++) // all the balls manegment 
+                for (int i = 0; i < ballsCounter; i++) // all the balls manegmant 
                 {
 
-                    distance = Math.Sqrt(((myBallz[i].X - ball.X) * (myBallz[i].X - ball.X)) + ((myBallz[i].Y - ball.Y) * (myBallz[i].Y - ball.Y))); //d=sqrt((x1-x2)^2 +(y1-y2)^2)
+                    distance = Math.Sqrt(((myBalls[i].X - ball.X) * (myBalls[i].X - ball.X)) + ((myBalls[i].Y - ball.Y) * (myBalls[i].Y - ball.Y))); //d=sqrt((x1-x2)^2 +(y1-y2)^2)
                     if (distance == 0) //distance cant be 0
                         distance = 0.001;
 
-                    Dispatcher.Invoke((Action)(() => overlap = ((ball.Radius) + (myBallz[i].Radius)) - distance));
+                    Dispatcher.Invoke((Action)(() => overlap = ((ball.Radius) + (myBalls[i].Radius)) - distance));
 
                     bool inRange = false;
-                    Dispatcher.Invoke((Action)(() => inRange = distance <= (ball.Radius) + (myBallz[i].Radius)));
+                    Dispatcher.Invoke((Action)(() => inRange = distance <= (ball.Radius) + (myBalls[i].Radius)));
 
                     if (inRange) // the balls in range
                     {
-                        ball.XDiff = ball.XDiff + (ball.X - myBallz[i].X) * (overlap / distance) * 0.3;
+                        ball.XDiff = ball.XDiff + (ball.X - myBalls[i].X) * (overlap / distance) * 0.3;
                         if (Math.Abs(ball.XDiff) > 15) // check the XDIff in Absolute value
                         {
                             if (ball.XDiff > 0)//if positive
@@ -110,7 +110,7 @@ namespace Bouncing_Balls
                             else //if not positive
                                 ball.XDiff += 5;
                         }
-                        ball.YDiff = ball.YDiff + (ball.Y - myBallz[i].Y) * (overlap / distance) * 0.3;
+                        ball.YDiff = ball.YDiff + (ball.Y - myBalls[i].Y) * (overlap / distance) * 0.3;
                         if (Math.Abs(ball.YDiff) > 15)// check the YDIff in Absolute value
                         {
                             if (ball.YDiff > 0) //if positive
