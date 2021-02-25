@@ -1,3 +1,3 @@
 # Bouncing_Balls
 
-![Alt text](/relative/path/to/img.jpg?raw=true "Optional Title")
+![Alt text](/bounce.png?raw=true "Screenshot")
