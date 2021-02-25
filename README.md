@@ -1,3 +1,3 @@
 # Bouncing_Balls
 
-![Alt text](/bounce.png?raw=true "Screenshot")
+![Alt text](/screenshot.png?raw=true "Screenshot")
